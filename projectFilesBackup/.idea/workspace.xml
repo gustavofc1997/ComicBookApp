@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad9253e5-65a5-473e-bb9d-699b91e378ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/ComicsBookApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/di/ActivityBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/di/AppComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/di/InteractorsModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/home/HomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/home/HomeContract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/home/HomePresenter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/models/Comic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/utils/BasePresenter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/utils/IErrorHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/utils/IErrorProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/view/BaseActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/view/BaseView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/view/callback/ErrorMessageListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/view/callback/IProgressDialogContract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/view/dialog/SimpleProgressDialog.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_progress_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/di/RepositoryModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/di/ServiceProviderModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/helpers/INetworkHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/mappers/APIComicMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/mappers/APIImageMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/models/APIComic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/models/APIComicImage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/models/APIComicsResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network/NetworkClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network/NetworkClientImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network/endpoints/ComicService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network/interceptors/AuthorizationInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network/interceptors/ConnectionInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/repositories/ComicsRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/utils/DataConstants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/utils/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/test/java/com/sundevs/data/base/MockableTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/test/java/com/sundevs/data/mappers/APIComicMapperTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/test/java/com/sundevs/data/repositories/ComicsRepositoryImplTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/exceptions/BackendErrorContent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/exceptions/CommonExceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/exceptions/NetworkException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/interactors/GetComicsInteractor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/interactors/base/Interactor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/models/Comic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/models/CoroutinesContextProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/models/None.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/sundevs/domain/repositories/IComicsRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/com/sundevs/domain/base/MockableTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/com/sundevs/domain/interactors/GetComicsInteractorTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/FirstFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sundevs/comicbook/SecondFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_first.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_second.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/androidTest/java/com/sundevs/data/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/test/java/com/sundevs/data/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/androidTest/java/com/sundevs/domain/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/sundevs/domain/ExampleUnitTest.kt" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="22_API_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Uz7sJcDKoX88WeoccAYQjrUAbd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.sundevs.comicbook.di" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/data/src/test/java/com/sundevs/data" />
+      <recent name="$PROJECT_DIR$/data/src/main/java/com/sundevs/data/network" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android JUnit.ComicsRepositoryImplTest.should get comic list">
+    <configuration name="APIComicMapperTest.shouldBeAbleToMapFromAPIComic" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sundevs.data.mappers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sundevs.data.mappers" />
+      <option name="MAIN_CLASS_NAME" value="com.sundevs.data.mappers.APIComicMapperTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToMapFromAPIComic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComicsRepositoryImplTest.should get comic list" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sundevs.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sundevs.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.sundevs.data.repositories.ComicsRepositoryImplTest" />
+      <option name="METHOD_NAME" value="should get comic list" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APIComicMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sundevs.data.mappers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sundevs.data.mappers" />
+      <option name="MAIN_CLASS_NAME" value="com.sundevs.data.mappers.APIComicMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APIComicMapperTest.shouldBeAbleToMapFromAPIComic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sundevs.data.mappers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sundevs.data.mappers" />
+      <option name="MAIN_CLASS_NAME" value="com.sundevs.data.mappers.APIComicMapperTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToMapFromAPIComic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APIComicMapperTest.shouldBeAbleToMapFromTVBlob" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sundevs.data.mappers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sundevs.data.mappers" />
+      <option name="MAIN_CLASS_NAME" value="com.sundevs.data.mappers.APIComicMapperTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToMapFromTVBlob" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.ComicsRepositoryImplTest.should get comic list" />
+        <item itemvalue="Android JUnit.APIComicMapperTest.shouldBeAbleToMapFromAPIComic" />
+        <item itemvalue="JUnit.APIComicMapperTest" />
+        <item itemvalue="JUnit.APIComicMapperTest.shouldBeAbleToMapFromAPIComic" />
+        <item itemvalue="JUnit.APIComicMapperTest.shouldBeAbleToMapFromTVBlob" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad9253e5-65a5-473e-bb9d-699b91e378ad" name="Default Changelist" comment="" />
+      <created>1576347627913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576347627913</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add modules for data and domain content">
+      <created>1576348595116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576348595116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add modules for data and domain content" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modules for data and domain content" />
+  </component>
+</project>

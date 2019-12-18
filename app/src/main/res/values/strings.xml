@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Comic Book</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="snackbar_no_internet_connection">Seems like we’re not connecting. Check your internet settings and try again.</string>
+    <string name="connectivity_error_snackbar">We could not properly contact the server. Please try again later.</string>
+    <string name="snackbar_unknown_error">Oops! It seems we are experiencing some issues at this time. Please try again later.</string>
+    <string name="not_enough_permissions">You don\'t have enough permissions to use the application.</string>
+    <string name="uploading_info">Loadin information.</string>
+    <string name="txt_default_empty">…</string>
+    <string name="connection_error_message">Your session was interrupted. Please check your connection and try refreshing this page.</string>
+    <string name="try_again">Try again</string>
+    <string name="connection_error_title">Connection lost</string>
+    <string name="action_grid">Grid</string>
+    <string name="action_list">List</string>
+
+
 </resources>

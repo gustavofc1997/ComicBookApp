@@ -1,0 +1,5 @@
+package com.sundevs.comicbook.utils
+
+const val ARGUMENT_DESCRIPTION = "ARGUMENT_DESCRIPTION"
+const val ARGUMENT_DISMISS = "ARGUMENT_DISMISS"
+const val ARGUMENT_TITLE = "ARGUMENT_TITLE"
