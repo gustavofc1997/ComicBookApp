@@ -10,7 +10,7 @@ class CreditsAdapter(
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is CreditViewHolder) {
-            holder.bind((credits[position]))
+            holder.bind((credits[position - 1]))
         } else {
             (holder as CreditHeaderViewHolder).bind(header)
         }
@@ -27,7 +27,8 @@ class CreditsAdapter(
         HEADER,
         ITEMS
     }
-    override fun getItemCount() = credits.size
+
+    override fun getItemCount() = credits.size + 1
 
     override fun getItemViewType(position: Int): Int {
         return if (isPositionHeader(position)) ViewType.HEADER.ordinal else ViewType.ITEMS.ordinal

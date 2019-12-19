@@ -53,7 +53,6 @@ class ComicDetailActivity : BaseActivity(), ComicDetailContract.View {
             this
         )
 
-
     override fun setComic(comic: ComicDetail) {
         ivComic.loadImageFromUrl(comic.image)
 
