@@ -14,14 +14,20 @@ class ComicListViewHolder(itemView: View) :
     RecyclerView.ViewHolder(itemView), BindViewHolder {
 
     constructor(parent: ViewGroup)
-            : this(LayoutInflater.from(parent.context).inflate(R.layout.item_comic_list, parent, false))
+            : this(
+        LayoutInflater.from(parent.context).inflate(
+            R.layout.item_comic_list,
+            parent,
+            false
+        )
+    )
 
     private val ivComicLogo = itemView.findViewById<ImageView>(R.id.ivComic)
     private val tvComicTitle = itemView.findViewById<TextView>(R.id.tvComicTitle)
     private val tvComicDate = itemView.findViewById<TextView>(R.id.tvComicDate)
 
-    override fun bind(workplace: Comic, listener: ComicsAdapterListener) {
-        setupView(workplace, listener)
+    override fun bind(comic: Comic, listener: ComicsAdapterListener) {
+        setupView(comic, listener)
     }
 
     private fun setupView(
@@ -32,7 +38,7 @@ class ComicListViewHolder(itemView: View) :
         tvComicTitle.text = comic.name
 
         itemView.setOnClickListener {
-            listener.onComicClicked(comic, it)
+            listener.onComicClicked(comic)
         }
     }
 }

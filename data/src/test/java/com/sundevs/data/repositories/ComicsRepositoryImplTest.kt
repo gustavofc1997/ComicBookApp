@@ -45,7 +45,17 @@ class ComicsRepositoryImplTest : MockableTest {
 
 
     private val APIComicResponse =
-        APIComicsResponse(listOf(APIComic(APIComicImage("image"), "2008-06-06 11:09:47", "Comic number", "2")))
+        APIComicsResponse(
+            listOf(
+                APIComic(
+                    APIComicImage("image"),
+                    "2008-06-06 11:09:47",
+                    "Comic number",
+                    "2",
+                    "URL"
+                )
+            )
+        )
 
     private fun getRepositoryImpl(): IComicsRepository {
         return ComicsRepositoryImpl(networkClient, comicsService)

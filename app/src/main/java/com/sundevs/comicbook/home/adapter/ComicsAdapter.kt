@@ -1,10 +1,8 @@
 package com.sundevs.comicbook.home.adapter
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.sundevs.comicbook.R
 import com.sundevs.domain.models.Comic
 
 class ComicsAdapter(

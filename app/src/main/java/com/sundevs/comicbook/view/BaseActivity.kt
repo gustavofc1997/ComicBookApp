@@ -71,16 +71,4 @@ open class BaseActivity : DaggerAppCompatActivity(), BaseView, ErrorMessageListe
     override fun hideProgressDialog() {
         progressDialog?.hide()
     }
-
-    fun runViewTransactionAsync(
-        delayTime: Long = ZERO.toLong(),
-        animationBlock: () -> Unit
-    ) {
-        CoroutineScope(Dispatchers.Main).launch {
-            delay(delayTime)
-            withContext(Dispatchers.Main) {
-                animationBlock()
-            }
-        }
-    }
 }

@@ -1,17 +1,22 @@
 package com.sundevs.comicbook.home
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import androidx.recyclerview.widget.GridLayoutManager
 import com.sundevs.comicbook.R
+import com.sundevs.comicbook.comicDetail.ComicDetailActivity
 import com.sundevs.comicbook.home.adapter.ComicsAdapter
 import com.sundevs.comicbook.home.adapter.ComicsAdapterListener
+import com.sundevs.comicbook.utils.ARGUMENT_COMIC_DETAIL
+import com.sundevs.comicbook.utils.COUNT_GRID_MODE
+import com.sundevs.comicbook.utils.COUNT_LIST_MODE
 import com.sundevs.comicbook.view.BaseActivity
 import com.sundevs.domain.models.Comic
 import kotlinx.android.synthetic.main.home_activity.*
 import javax.inject.Inject
-import android.view.Menu
-import android.view.MenuItem
-import androidx.recyclerview.widget.GridLayoutManager
 
 class HomeActivity : BaseActivity(), HomeContract.View, ComicsAdapterListener {
 
@@ -27,13 +32,12 @@ class HomeActivity : BaseActivity(), HomeContract.View, ComicsAdapterListener {
         presenter.bind(this)
         lifecycle.addObserver(presenter)
         initRecyclerView()
-
     }
 
     private fun initRecyclerView() {
         defaultlayoutManager =
             GridLayoutManager(
-                this@HomeActivity, 3
+                this@HomeActivity, COUNT_GRID_MODE
             )
         comicsAdapter = ComicsAdapter(this, defaultlayoutManager)
 
@@ -45,11 +49,11 @@ class HomeActivity : BaseActivity(), HomeContract.View, ComicsAdapterListener {
     }
 
     override fun showLoading() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        showProgressDialog()
     }
 
     override fun hideLoading() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        hideProgressDialog()
     }
 
     override fun setComicList(comics: ArrayList<Comic>) {
@@ -62,18 +66,21 @@ class HomeActivity : BaseActivity(), HomeContract.View, ComicsAdapterListener {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onComicClicked(comic: Comic, view: View) {
+    override fun onComicClicked(comic: Comic) {
+        val intent = Intent(this, ComicDetailActivity::class.java).apply {
+            putExtra(ARGUMENT_COMIC_DETAIL, comic.comicDetailUrl)
+        }
+        startActivity(intent)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_grid -> defaultlayoutManager.spanCount = 3
-            R.id.action_list -> defaultlayoutManager.spanCount = 1
+            R.id.action_grid -> defaultlayoutManager.spanCount = COUNT_GRID_MODE
+            R.id.action_list -> defaultlayoutManager.spanCount = COUNT_LIST_MODE
         }
         (rvComics.adapter as ComicsAdapter).let {
             it.notifyItemRangeChanged(0, it.itemCount)
         }
         return super.onOptionsItemSelected(item)
     }
-
 }

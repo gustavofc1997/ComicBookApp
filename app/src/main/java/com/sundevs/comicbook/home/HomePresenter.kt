@@ -25,6 +25,7 @@ class HomePresenter(
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     override fun getComics() {
+        view?.showLoading()
         launchJobOnMainDispatchers {
             try {
                 val list = withContext(coroutinesContextProvider.backgroundContext) {
@@ -41,6 +42,7 @@ class HomePresenter(
     override fun setComicList(comics: ArrayList<Comic>?) {
         this.comicList = comics
         comicList?.let {
+            view?.hideLoading()
             view?.setComicList(it)
         }
     }

@@ -15,8 +15,8 @@ class ComicsGridViewHolder(itemView: View) :
     constructor(parent: ViewGroup)
             : this(LayoutInflater.from(parent.context).inflate(R.layout.item_comic, parent, false))
 
-    override fun bind(workplace: Comic, listener: ComicsAdapterListener) {
-        setupView(workplace, listener)
+    override fun bind(comic: Comic, listener: ComicsAdapterListener) {
+        setupView(comic, listener)
     }
 
     private val ivComicLogo = itemView.findViewById<ImageView>(R.id.ivComic)
@@ -31,14 +31,14 @@ class ComicsGridViewHolder(itemView: View) :
         tvComicTitle.text = comic.name
 
         itemView.setOnClickListener {
-            listener.onComicClicked(comic, it)
+            listener.onComicClicked(comic)
         }
     }
 }
 
 interface BindViewHolder {
     fun bind(
-        workplace: Comic,
+        comic: Comic,
         listener: ComicsAdapterListener
     )
 }
