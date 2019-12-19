@@ -2,6 +2,7 @@ package com.sundevs.domain.interactors
 
 import com.sundevs.domain.base.MockableTest
 import com.sundevs.domain.models.Comic
+import com.sundevs.domain.models.ComicDetail
 import com.sundevs.domain.models.None
 import com.sundevs.domain.repositories.IComicsRepository
 import io.mockk.coEvery
@@ -11,31 +12,31 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 
-class GetComicsInteractorTest : MockableTest {
+class GetComicDetailInteractorTest : MockableTest {
+
 
     @MockK
     lateinit var comicsRepository: IComicsRepository
 
-    private val comic = Comic("name", "", "", "url")
+    private val comic = ComicDetail("image_url", listOf(), listOf(), listOf())
 
     @Before
     override fun setup() {
         super.setup()
-        coEvery { comicsRepository.getComics() }.answers {
-            listOf(comic)
+        coEvery { comicsRepository.getComicDetail(any()) }.answers {
+            comic
         }
     }
 
     @Test
     fun `get comic detail`() {
         val interactor =
-            GetComicsInteractor(comicsRepository)
+            GetComicDetailInteractor(comicsRepository)
         val result =
             runBlocking {
-                interactor(None)
+                interactor("anyString")
             }
 
-        Assert.assertEquals(listOf(comic), result)
-
+        Assert.assertEquals("image_url", result.image)
     }
 }

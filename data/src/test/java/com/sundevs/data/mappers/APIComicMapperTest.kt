@@ -15,6 +15,8 @@ class APIComicMapperTest : APIComicMapperDependentTest() {
     }
 }
 
+
+
 abstract class APIComicMapperDependentTest : MockableTest {
 
     val apiComic = APIComic(APIComicImage("image"), "2008-06-06 11:09:47", "Comic one", "1", "URL")
